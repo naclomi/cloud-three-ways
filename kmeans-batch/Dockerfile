@@ -10,4 +10,4 @@ FROM jupyter/scipy-notebook
 
 COPY kmeans.py /home/joyvan/kmeans.py
 
-ENTRYPOINT /bin/bash -c 'python3 /home/joyvan/kmeans.py && cp *.png $AZ_BATCH_TASK_WORKING_DIR/'
+ENTRYPOINT /bin/bash -c 'python3 /home/joyvan/kmeans.py'
